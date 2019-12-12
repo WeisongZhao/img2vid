@@ -1,5 +1,9 @@
 ## img2vid
 ### A light weight matlab library for making exsiting images to videos 
+<p>
+<img src='imgs/img2vid.png' align="right" width=100>
+</p>
+
 It contains all codes to generate the videos in the publication:
 **Weisong Zhao et al. Mathematically surpassing microscopic hardware limits
 % to enable ultrafast, 60 nm resolution in live cells (2020) .........**
