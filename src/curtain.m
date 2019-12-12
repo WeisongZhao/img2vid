@@ -1,6 +1,6 @@
 function img=curtain(data1,data2,rate)
 
-if ismatrix(data2)
+if ~iscelldata2)
     of=size(data1,3);
     frame=floor(size(data1,2)/rate);
     if size(data1,3)<frame
