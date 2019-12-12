@@ -74,6 +74,11 @@ end
 ```python
 large=imlarge(imgsmall,6);
 ```
+<p align='center'>
+  <img src='imgs/imginter.png' width='350'/>
+  <img src='imgs/imlarge.png' width='350'/>
+</p>
+
 - draw_avi.m: You can DIY your specific video rate with a maximal rate.
 
 ```python
@@ -153,6 +158,10 @@ for i=517:543
     export_fig(gcf,['stage2\',int2str(flage),'total.png'])
 end
 ```
+#### An example
+<p align='center'>
+  <img src='imgs/stage2.gif' width='600'/>
+</p>
 #### `frame` aims to draw a rectangle ROI in the large field of view.
 #### `appendt`and `appendxy` aim to append frames along different axes.
 #### `Merge`and `tifresize` aim to append frames with different xy size along t axial 
