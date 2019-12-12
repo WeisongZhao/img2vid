@@ -72,8 +72,9 @@ end
 - imlarge.m: Interestingly, if you have a small image (for example 50x50) and want to display it in large, the interpolation (if over 2 times) will make such image looks very blurry or oversmooth. This function will enlarge each pixel without interpolation to solve this problem.
 
 ```python
-large=imlarge(imgsmall,6);
+large=imlarge(imgsmall,20);
 ```
+#### Example：left: interpolation, right: imlarge.
 <p align='center'>
   <img src='imgs/imginter.png' width='350'/>
   <img src='imgs/imlarge.png' width='350'/>
@@ -145,14 +146,11 @@ for i=517:543
     flage=flage+1;
     large=imread(['stage1\',int2str(i),'.tif']);
     imshow(large,'border','tight','initialmagnification','fit')
-    set (gcf,'Position',[0,0,1*size(large,2),1*size(large,1)])
-    
+    set (gcf,'Position',[0,0,1*size(large,2),1*size(large,1)])    
     text1=text(230,505,['label1']);
-    set(text1,'Color',[1,0,0],'Fontsize',25,'Fontname','Arial')
-%     
+    set(text1,'Color',[1,0,0],'Fontsize',25,'Fontname','Arial')     
     text1=text(280,545,['+']);
-    set(text1,'Color',[1,1,1],'Fontsize',25,'Fontname','Arial')
-  
+    set(text1,'Color',[1,1,1],'Fontsize',25,'Fontname','Arial')  
     text1=text(170,585,['label2']);
     set(text1,'Color',[0,1,0],'Fontsize',25,'Fontname','Arial')
     export_fig(gcf,['stage2\',int2str(flage),'total.png'])
@@ -160,7 +158,7 @@ end
 ```
 #### An example
 <p align='center'>
-  <img src='imgs/stage2.gif' width='600'/>
+  <img src='imgs/stage2.gif' width='1000'/>
 </p>
 #### `frame` aims to draw a rectangle ROI in the large field of view.
 #### `appendt`and `appendxy` aim to append frames along different axes.
