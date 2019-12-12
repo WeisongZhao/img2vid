@@ -156,17 +156,18 @@ for i=517:543
     export_fig(gcf,['stage2\',int2str(flage),'total.png'])
 end
 ```
-#### An example
+## A video example
+
 <p align='center'>
   <img src='imgs/stage2.gif' width='1000'/>
 </p>
+
 #### `frame` aims to draw a rectangle ROI in the large field of view.
 #### `appendt`and `appendxy` aim to append frames along different axes.
 #### `Merge`and `tifresize` aim to append frames with different xy size along t axial 
 #### `saclebar` aim to draw a scale bar.
 #### `edging` aim to draw white boxes on the edge of images.
 
-### Addional dependency:
-#### [export_fig](https://github.com/altmany/export_fig)
-#### [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d)
+## Addional dependency:
+#### [export_fig](https://github.com/altmany/export_fig) and [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d)
 You can find documents through the links!
