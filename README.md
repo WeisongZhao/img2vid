@@ -6,15 +6,17 @@
 </p>
 
 It contains all codes to generate the videos in the publication:
-**Weisong Zhao et al. Mathematically surpassing microscopic hardware limits
-% to enable ultrafast, 60 nm resolution in live cells (2020) .........**
-</br></br></br>
+**Weisong Zhao et al. Mathematically surpassing microscopic hardware limits to enable ultrafast, 60 nm resolution in live cells (2020) .........**
+<br></br><br></br><br></br>
 
 ### Pipeline
 - Load your exsiting images (captured with your camera or PMT) into memory:
 `imreadRGBTiff` `imreadTiff`
 - Process the images as your design:
 `curtain` `colorm` `scalebar` `edging` `frame` `imlarge``appendt` `appendxy` `Merge` `tifresize` 
+
+> Attention! The most important thing to create a video with `img2vid` is the concept of canvas. Specifically, before process the images, you should plan the canvas size of your video e.g. `zeros(2000,4000,3)`. Once the canvas is settled, all left is to draw (fill in) your canvas with your designed content.
+
 - Save your results: `imwriteRGBstack` `imwritestack` 
 - Print the label to the processed images.
 - Make the videos! `draw_gif` `draw_avi`
@@ -168,12 +170,25 @@ end
   <img src='imgs/stage2.gif' width='1000'/>
 </p>
 
-#### `frame` aims to draw a rectangle ROI in the large field of view.
-#### `appendt`and `appendxy` aim to append frames along different axes.
-#### `Merge`and `tifresize` aim to append frames with different xy size along t axial 
-#### `saclebar` aim to draw a scale bar.
-#### `edging` aim to draw white boxes on the edge of images.
+- `frame` aims to draw a rectangle ROI in the large field of view.
+-  `appendt`and `appendxy` aim to append frames along different axes.
+-   `Merge`and `tifresize` aim to append frames with different xy size along t axial.
+-   `saclebar` aim to draw a scale bar.
+-    `edging` aim to draw white boxes on the edge of images.
+
+#### Why scripts, but not Adobe Premiere?
+- To produce a large number of videos (for publications), the speed of scripts will much much faster than the `Adobe Premiere` type UI software. You may spend a little time on your first video, but with the accumulated code snippets, this will speed up much on your second video.
+- To produce the data e.g. enlarge/[merge channels](https://github.com/WeisongZhao/Palette.ui)/curtain/scale bar/auto-label, scripts are faster, and more flexible than `Adobe Premiere`.
+- In fact, in my opinion, the best way is to combine these tools, e.g. produce data with matlab scripts, and make videos with `Adobe Premiere`. But you may want to avoid twice video label production, which will leave to different label resolution.
+
+#### Why Matlab scripts, but not other scripts?
+- Certainly, python is also a good choice to produce the videos, and it is in the plan to add a pyhon version of `img2vid`.
+- However, if you want to label a rectangle or an arrow on your videos, you will need the `matlab fig ui` to locate the specific position and angle of them. Additionally, in my usage, the images/videos/gif labeled and produced with python are usually with low resolution.
+- Matlab is an integrated environment. For python, you have to find some effective packages myself to produce the label, and high resolution images/videos/gifs.
+- HIT, and PKU buy the matlab (:relaxed:).
 
 ## Addional dependency:
-#### [export_fig](https://github.com/altmany/export_fig) and [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d)
+#### [export_fig](https://github.com/altmany/export_fig), [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d) and [Palette](https://github.com/WeisongZhao/Palette.ui)
 You can find documents through the links!
+## Open source [Github](https://github.com/WeisongZhao/img2vid)
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
