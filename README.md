@@ -7,7 +7,7 @@
 
 It contains all codes to generate the videos in the publication:
 **Weisong Zhao et al. Mathematically surpassing microscopic hardware limits to enable ultrafast, 60 nm resolution in live cells (2020) .........**
-<br></br><br>
+<br></br>
 > v0.1.0
 
 ### Pipeline
