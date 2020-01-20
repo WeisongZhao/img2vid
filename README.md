@@ -190,6 +190,9 @@ end
 
 ## Addional dependency:
 #### [export_fig](https://github.com/altmany/export_fig), [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d) and [Palette](https://github.com/WeisongZhao/Palette.ui)
-You can find documents through the links!
-## Open source [Github](https://github.com/WeisongZhao/img2vid)
+You can find documents through the links! 
+
+BTW, if you want to merge a multi-channel 2D or 3D (to MIP view) images, you can have a try on [Palette](https://github.com/WeisongZhao/Palette.ui). Palette enables us to ‘fine tune’ each merged color (exact weight of RGB components assembling, gamma, and gain setting for each channel).
+
+## Open source [img2vid](https://github.com/WeisongZhao/img2vid)
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
