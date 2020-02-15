@@ -189,9 +189,9 @@ end
 - HIT, and PKU have bought the matlab (:relaxed:).
 
 ## Addional dependency:
-#### [export_fig](https://github.com/altmany/export_fig), [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d) and [Palette](https://github.com/WeisongZhao/Palette.ui)
+#### [export_fig](https://github.com/altmany/export_fig), [Zoom in ROI](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d), and [Palette](https://github.com/WeisongZhao/Palette.ui)
 You can find documents through the links! 
-
+Also img2vid is accompanied with some imagej macro from [@HenriquesLab](https://twitter.com/HenriquesLab/status/1116955365344784385)
 BTW, if you want to merge a multi-channel 2D or 3D (to MIP view) images, you can have a try on [Palette](https://github.com/WeisongZhao/Palette.ui). Palette enables users to ‘fine tune’ each merged color (exact weight of RGB components assembling, gamma, and gain setting for each channel).
 
 ## Open source [img2vid](https://github.com/WeisongZhao/img2vid)
