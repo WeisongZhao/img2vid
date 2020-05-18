@@ -22,6 +22,12 @@ It contains all codes to generate the videos in the publication:
 - Print the label to the processed images.
 - Make the videos! `draw_gif` `draw_avi`
 
+###News
+- Read imagej ROI (to Matlab) from [@DylanMuir](https://github.com/DylanMuir/ReadImageJROI)
+- imagej Animated Panning/Zoom in from [@cleterrier](https://github.com/cleterrier/Utils) with some modifications
+- imagej ROI zoom in from [@ekatrukha](https://gist.github.com/ekatrukha/61a1138063591b524e043891e5201f3d)
+- Basic features
+
 ### Instruction
 
 - curtain.m: to creat the curtain-like special effect (comparison between multi-image). 
