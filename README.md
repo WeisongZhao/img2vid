@@ -14,7 +14,7 @@ It contains all codes to generate the videos in the publication:
 - Load your exsiting images (captured with your camera or PMT) into memory:
 `imreadRGBTiff` `imreadTiff`
 - Process the images as your design:
-`curtain` `colorm` `scalebar` `edging` `frame` `imlarge``appendt` `appendxy` `Merge` `tifresize` 
+`curtain` `radar` `colorm` `scalebar` `edging` `frame` `imlarge``appendt` `appendxy` `Merge` `tifresize` 
 
 > Attention! The most important thing to create a video with `img2vid` is the concept of canvas. Specifically, before process the images, you should plan the canvas size of your video e.g. `zeros(2000,4000,3)`. Once the canvas is settled, all left is to draw (fill in) your canvas with your designed content.
 
@@ -34,6 +34,7 @@ It contains all codes to generate the videos in the publication:
 
 ```python
 /example1
+rate=5;
 data1=before;
 data2{1}=after1;
 data2{2}=after3;
@@ -50,6 +51,22 @@ for i=1:3
 	data2=after(:,:,i);
 	img(:,:,i,:)=curtain(data1,data2,rate)
 end
+```
+- radar.m: to creat the radar-like special effect (comparison between 2 images). 
+
+```python
+/example1
+rate=5;
+isRGB=1;
+linewidth=1;
+out = radar(data1,data2,rate,isRGB,linewidth);
+
+/example2
+rate=5;
+isRGB=0;
+linewidth=1;
+outRGB = radar(data1,data2,rate,isRGB,linewidth);
+out=squeeze(outRGB(:,:,1,:));
 ```
 - colorm.m: to creat the color-coded special effect (t or z axial projection). The common colormap **jet** and **16_colors** is provided in this repo.
 
