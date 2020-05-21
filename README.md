@@ -1,5 +1,7 @@
+<p>
 <h1 align="center">img2vid</h1>
 <h5 align="center">A light weight matlab library for making exsiting images to videos </h5>
+</p>
 
 <p>
 <img src='/imgs/img2vid.png' align="left" width=150>
