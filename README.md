@@ -6,9 +6,12 @@
 </p>
 
 </br>
+
 It contains all codes to generate the videos in the publication:
 **Weisong Zhao et al. Extending resolution of structured illumination microscopy with sparse deconvolution (2020) .........**
+
 <br></br>
+
 > v0.1.0
 
 ### Pipeline
