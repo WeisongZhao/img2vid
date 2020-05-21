@@ -10,12 +10,6 @@
 </br>
 It contains all codes to generate the videos in the publication: **Weisong Zhao et al. Extending resolution of structured illumination microscopy with sparse deconvolution (2020) .........**
 > v0.1
-</br></br>
-
-
-
-
-
 
 ### Pipeline
 - Load your exsiting images (captured with your camera or PMT) into memory:
