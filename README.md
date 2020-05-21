@@ -1,10 +1,11 @@
-## img2vid
-### A light weight matlab library for making exsiting images to videos 
+<h1 align="center">img2vid</h1>
+<h5 align="center">A light weight matlab library for making exsiting images to videos </h5>
 
 <p>
 <img src='/imgs/img2vid.png' align="left" width=150>
 </p>
 
+</br>
 It contains all codes to generate the videos in the publication:
 **Weisong Zhao et al. Extending resolution of structured illumination microscopy with sparse deconvolution (2020) .........**
 <br></br>
