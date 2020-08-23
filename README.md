@@ -8,7 +8,7 @@
 </p>
 
 </br>
-It contains all codes to generate the videos in the publication: <b>Weisong Zhao et al. Extending resolution of structured illumination microscopy with sparse deconvolution (2020) .........</b>
+It contains all codes to generate the videos in the publication: <b>Weisong Zhao et al. Overcoming physical resolution limit of structured illumination microscopy with sparse deconvolution (2020) .........</b>
 
 > v0.1
 
