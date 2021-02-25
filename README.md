@@ -4,10 +4,10 @@
 </p>
 
 <p>
-<img src='/imgs/img2vid.png' align="left" width=150>
+<img src='./imgs/img2vid.png' align="left" width=150>
 </p>
 
-</br>
+<br>
 It contains all codes to generate the videos in the publication: <b>Weisong Zhao et al. Overcoming physical resolution limit of structured illumination microscopy with sparse deconvolution (2020) .........</b>
 
 > v0.1
