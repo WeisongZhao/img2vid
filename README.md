@@ -8,7 +8,13 @@
 </p>
 
 <br>
-It contains all codes to generate the videos in the publication: <b>Weisong Zhao et al. Overcoming physical resolution limit of structured illumination microscopy with sparse deconvolution (2020) .........</b>
+It contains all codes to generate the videos in the publication: 
+
+<p align='center'>
+  <b> <a href="https://www.nature.com/nbt/">Weisong Zhao et al. Extending resolution of structured illumination microscopy with sparse deconvolution, Nature Biotechnology, X, XXX-XXX (2021)</a></b>
+</p>
+
+If you find img2vid useful, please cite our paper.
 
 > v0.1
 
