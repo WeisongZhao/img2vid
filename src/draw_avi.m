@@ -13,10 +13,10 @@ open(vid)
 
 for i = 1 : 141
     for loop2=1:2
-        imshow(display(:,:,:,i),'border','tight','initialmagnification','fit')
-        set (gcf,'Position',[0,0,mag*size(display(:,:,i),2),mag*size(display(:,:,i),1)])
-        axis normal
-        drawnow;
+%         imshow(display(:,:,:,i),'border','tight','initialmagnification','fit')
+%         set (gcf,'Position',[0,0,mag*size(display(:,:,i),2),mag*size(display(:,:,i),1)])
+%         axis normal
+%         drawnow;
         c = getframe;
         writeVideo(vid, c);
     end
